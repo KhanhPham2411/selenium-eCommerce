@@ -45,10 +45,10 @@ public class OrderDetailPage  extends BasePage {
 
 	public List<Order> getOrderList(){
 		List<Order> orderList = new ArrayList<Order>();
-
 		List<WebElement> rows = orderTable.findElements(By.xpath("//tbody/tr"));
 		
+		
 
-		return orderList;
+		return orderList; 
 	}
 }

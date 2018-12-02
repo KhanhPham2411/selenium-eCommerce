@@ -8,14 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import pagedom.CustomerAccountPageDom;
 
 public class CustomerAccountPage extends BasePage {
-
-	@FindBy(xpath = "//a[text() = 'My Orders']")
-	WebElement menuMyOrders;
-
-	@FindBy(xpath = "//a[text() = 'View Order']")
-	WebElement viewOrder;
-
-
 	private CustomerAccountPageDom document;
 
 	public CustomerAccountPage(WebDriver driver) {
@@ -40,13 +32,5 @@ public class CustomerAccountPage extends BasePage {
 	 */
 	public void setDocument(CustomerAccountPageDom document) {
 		this.document = document;
-	}
-
-	public void clickMenuMyOrders() {
-		menuMyOrders.click();
-	}
-
-	public void clickViewOrder(){
-		viewOrder.click();
 	}
 }

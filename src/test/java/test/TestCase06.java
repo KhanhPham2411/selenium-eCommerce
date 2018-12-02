@@ -12,7 +12,7 @@ public class TestCase06 extends TestCase05{
 	@Test
 	public void verifyPurchaseProduct() {
 		this.verifyMobileListPage();
-
+		
 		HomePage homePage = new HomePage(driver);
 		homePage.open();
 		homePage.getHeader().clickMyWishlist();

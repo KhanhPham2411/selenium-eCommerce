@@ -4,7 +4,7 @@ public class Order {
 	String orderId;
 	String date;
 	String shipTo;
-	String otderTotal;
+	String orderTotal;
 	String status;
 	String orderLink;
 	String reorderLink;
@@ -39,11 +39,11 @@ public class Order {
 	public void setShipTo(String shipTo) {
 		this.shipTo = shipTo;
 	}
-	public String getOtderTotal() {
-		return otderTotal;
+	public String getOrderTotal() {
+		return orderTotal;
 	}
-	public void setOtderTotal(String otderTotal) {
-		this.otderTotal = otderTotal;
+	public void setOrderTotal(String otderTotal) {
+		this.orderTotal = otderTotal;
 	}
 	public String getStatus() {
 		return status;
