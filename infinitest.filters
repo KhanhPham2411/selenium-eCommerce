@@ -1,2 +1,2 @@
 # Include tests that end in ITest or TestCase
-include .*ITest, .*UnitTest
+include .*UnitTest
