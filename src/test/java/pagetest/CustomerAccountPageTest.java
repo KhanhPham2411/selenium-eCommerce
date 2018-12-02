@@ -2,19 +2,20 @@ package pagetest;
 
 import java.util.List;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import junit.framework.Assert;
 import models.Order;
-import pages.OrderDetailPage;
-import pages.ShoppingCartPage;
+import pages.CustomerAccountPage;
 import test.BaseTestCaseWithLogin;
 
-public class OrderDetailPageTest extends BaseTestCaseWithLogin {
+public class CustomerAccountPageTest extends BaseTestCaseWithLogin {
     @Test
 	public void testGetOrderList(){
-        OrderDetailPage orderDetailPage = new OrderDetailPage(driver);
-        List<Order> orderList = orderDetailPage.getOrderList();
+        CustomerAccountPage customerAccountPage = new CustomerAccountPage(driver);
+        customerAccountPage.open();
+
+        List<Order> orderList = customerAccountPage.getOrderList();
 
         Assert.assertTrue(orderList.size() > 0);
 

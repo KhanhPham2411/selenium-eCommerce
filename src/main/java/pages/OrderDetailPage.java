@@ -14,8 +14,6 @@ import pagedom.OrderDetailPageDom;
 
 public class OrderDetailPage  extends BasePage {
 
-	@FindBy(id = "my-orders-table")
-	WebElement orderTable;
 
 	private OrderDetailPageDom document;
 
@@ -41,14 +39,5 @@ public class OrderDetailPage  extends BasePage {
 	 */
 	public void setDocument(OrderDetailPageDom document) {
 		this.document = document;
-	}
-
-	public List<Order> getOrderList(){
-		List<Order> orderList = new ArrayList<Order>();
-		List<WebElement> rows = orderTable.findElements(By.xpath("//tbody/tr"));
-		
-		
-
-		return orderList; 
 	}
 }

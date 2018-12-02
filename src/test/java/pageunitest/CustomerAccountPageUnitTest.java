@@ -7,14 +7,14 @@ import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 import models.Order;
-import pages.OrderDetailPage;
+import pages.CustomerAccountPage;
 
-public class OrderDetailPageUnitTest {
+public class CustomerAccountPageUnitTest {
 	
 	@Test
 	public void testGetOrderList(){
 		List<Order> orderList = new ArrayList<Order>();
-		OrderDetailPage page;
+		CustomerAccountPage page;
 		
 		Assert.assertTrue(true);
 	}
