@@ -10,6 +10,7 @@ import pages.CustomerAccountPage;
 import test.BaseTestCaseWithLogin;
 
 public class CustomerAccountPageTest extends BaseTestCaseWithLogin {
+    
     @Test
 	public void testGetOrderList(){
         CustomerAccountPage customerAccountPage = new CustomerAccountPage(driver);
@@ -18,7 +19,7 @@ public class CustomerAccountPageTest extends BaseTestCaseWithLogin {
         List<Order> orderList = customerAccountPage.getOrderList();
 
         Assert.assertTrue(orderList.size() > 0);
-
+        
         Order orderItem = orderList.get(0);
         Assert.assertEquals("100008370", orderItem.getOrderId());
         Assert.assertEquals("11/28/2018", orderItem.getDate());
