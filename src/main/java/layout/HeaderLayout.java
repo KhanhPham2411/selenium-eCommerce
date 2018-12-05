@@ -18,7 +18,6 @@ public class HeaderLayout {
 	WebElement subMenuMyWishlist;
 	
 	public HeaderLayout(WebDriver driver) {
-		// TODO Auto-generated constructor stub
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

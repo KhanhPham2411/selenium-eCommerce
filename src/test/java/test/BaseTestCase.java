@@ -24,6 +24,7 @@ public class BaseTestCase {
 		System.setProperty("webdriver.chrome.driver","E:\\Personal\\Jobs\\20180824 Shopee\\Selenium\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 	}
 	
 	@AfterTest
